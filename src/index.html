@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head> <script type="text/javascript" src="zepto.js"></script>
+	</head>
+
+	<body style="text-align: center">
+		<header> 
+			<h1>Bikers Revenge!</h1>
+		</header>
+
+		<button onclick="getLocation()">Report</button>
+		<script>
+		function getLocation() {
+			//if(navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(sendPosition)
+			//} else {
+			//	alert("Geolocation not supported")
+			//}
+		}
+		
+			function sendPosition(position){
+				forge.request.ajax({
+					type: 'POST',
+					url: 'some_ip/reports',
+					data: {
+						latitude: position.coords.latitude, 
+						longitude: position.coords.longitude, 
+						timestamp: new Date().getTime()
+					},
+					dataType: 'json',
+					success: function() {
+						alert('Report succesfully submitted!');
+					},
+					error: function(error) {
+						alert('Report failed to submit!' + error.message);
+					}
+				})
+			}
+
+		</script>
+
+		<footer>
+			<br/>
+			link to: Map, Feed, Report 
+		</footer>
+	</body>
+
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">demo_app</string>
+    <string name="package_name">io.trigger.forge7e175680b59111e198f412313d1adcbe</string>
+    <string name="payments_publicKey">PAYMENTS_PUBLIC_KEY_HERE</string>
+</resources>
