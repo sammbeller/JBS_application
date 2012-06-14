@@ -6,8 +6,6 @@
 	"platform_version": "v1.3",
 	"description": "An empty app created by default",
 	"modules": {
-		"geolocation": true
-		"is": true
 		"logging": {
 			"level": "DEBUG"
 		}

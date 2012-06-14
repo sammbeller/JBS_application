@@ -1,0 +1,48 @@
+2012-06-14 14:11:41,643 [   INFO] Forge tools running at version 3.3.2
+2012-06-14 14:11:41,646 [  DEBUG] Forge build tools version: 3.3.2
+2012-06-14 14:11:41,647 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-06-14 14:11:41,666 [  DEBUG] GET https://trigger.io/api/version_check/3/3/2/
+2012-06-14 14:11:42,149 [  DEBUG] Checking API response for success or error
+2012-06-14 14:11:42,150 [   INFO] Update result: you already have the latest tools
+2012-06-14 14:11:42,151 [  DEBUG] .template is not a directory: don't have templates
+2012-06-14 14:11:42,152 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-06-14 14:11:42,200 [  DEBUG] Checking API response for success or error
+2012-06-14 14:11:42,201 [  DEBUG] already authenticated via cookie - continuing
+2012-06-14 14:11:42,205 [  ERROR] Your configuration file (src/config.json) is malformed:
+Expecting , delimiter: line 10 column 3 (char 219)
+2012-06-14 14:11:42,205 [  DEBUG] Traceback (most recent call last):
+  File "/Users/guest/Desktop/forge-tools/forge/async.py", line 87, in run
+    result = self._target(*self._args, **self._kwargs)
+  File "/Users/guest/Desktop/forge-tools/forge/main.py", line 314, in development_build
+    should_rebuild = remote.server_says_should_rebuild()
+  File "/Users/guest/Desktop/forge-tools/forge/remote.py", line 491, in server_says_should_rebuild
+    app_config = build_config.load_app(path_to_app)
+  File "/Users/guest/Desktop/forge-tools/forge/build_config.py", line 37, in load_app
+    raise forge.ForgeError("Your configuration file ({0}) is malformed:\n{1}".format(app_config_file, e))
+ForgeError: Your configuration file (src/config.json) is malformed:
+Expecting , delimiter: line 10 column 3 (char 219)
+
+2012-06-14 14:13:18,811 [   INFO] Forge tools running at version 3.3.2
+2012-06-14 14:13:18,813 [  DEBUG] Forge build tools version: 3.3.2
+2012-06-14 14:13:18,814 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-06-14 14:13:18,819 [  DEBUG] GET https://trigger.io/api/version_check/3/3/2/
+2012-06-14 14:13:18,960 [  DEBUG] Checking API response for success or error
+2012-06-14 14:13:18,961 [   INFO] Update result: you already have the latest tools
+2012-06-14 14:13:18,962 [  DEBUG] .template is not a directory: don't have templates
+2012-06-14 14:13:18,962 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-06-14 14:13:19,002 [  DEBUG] Checking API response for success or error
+2012-06-14 14:13:19,003 [  DEBUG] already authenticated via cookie - continuing
+2012-06-14 14:13:19,004 [  ERROR] Your configuration file (src/config.json) is malformed:
+Expecting , delimiter: line 10 column 3 (char 219)
+2012-06-14 14:13:19,005 [  DEBUG] Traceback (most recent call last):
+  File "/Users/guest/Desktop/forge-tools/forge/async.py", line 87, in run
+    result = self._target(*self._args, **self._kwargs)
+  File "/Users/guest/Desktop/forge-tools/forge/main.py", line 314, in development_build
+    should_rebuild = remote.server_says_should_rebuild()
+  File "/Users/guest/Desktop/forge-tools/forge/remote.py", line 491, in server_says_should_rebuild
+    app_config = build_config.load_app(path_to_app)
+  File "/Users/guest/Desktop/forge-tools/forge/build_config.py", line 37, in load_app
+    raise forge.ForgeError("Your configuration file ({0}) is malformed:\n{1}".format(app_config_file, e))
+ForgeError: Your configuration file (src/config.json) is malformed:
+Expecting , delimiter: line 10 column 3 (char 219)
+
